@@ -232,3 +232,13 @@ padding-right: 25px;
     justify-content: center;
     align-items: center;
 }
+/* -------------Footer------------ */
+footer{
+    background-color: var(--dark-brown);
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    justify-content: center;
+    align-items: center;
+}
