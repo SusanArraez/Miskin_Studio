@@ -5,14 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Susan Arraez">
     <meta name="description" content="Get custom made woodworking furniture for your house for a lavish and luxurious look. Contact us directly for a custom quote.">
+    <link rel="shortcut icon" type="image/x-icon" href="images/MLogo_favicon_io/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <title>Miskin Studio</title>
 </head>
 <body>
     <a class="skip-to-content-link" href="#main">Skip to content</a>
     <header>
-        
+        <h1>Miskin Studios</h1>
+        <div id="logo">
+        <a href="#"> <svg width="61" height="72" viewBox="0 0 61 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.68093 71.694L0.30127 66.3261V25.9808C0.30127 11.8202 13.8473 0.300604 30.4973 0.300604C47.1474 0.300604 60.6934 11.8202 60.6934 25.9754V66.3261L55.3137 71.694H5.68093Z" stroke="#F2F2F2" stroke-width="1.12" stroke-miterlimit="10"/>
+<path d="M55.3137 25.9808C55.3137 14.7672 44.2047 5.6739 30.4973 5.6739C16.7899 5.6739 5.68091 14.7618 5.68091 25.9808V66.3315H55.3137V25.9808Z" stroke="#F2F2F2" stroke-width="1.12" stroke-miterlimit="10"/>
+<path d="M22.3633 38.2626C17.8336 38.3002 17.8336 38.7457 17.7529 42.3422V48.9018C17.7529 51.8363 19.209 53.3035 22.1212 53.3035H22.5193V53.7061H12.5777V53.3035H12.9811C15.8933 53.3035 17.3494 51.8363 17.3494 48.9018V42.3422C17.2956 39.6225 15.185 38.2626 11.0176 38.2626H9.37677V37.8654H11.0176C15.081 37.8654 17.1791 36.4912 17.3118 33.7428C17.3494 32.9805 17.3494 30.4254 17.3494 27.9025C17.3494 24.102 17.1504 24.102 12.9811 24.102H12.5777V23.7048H20.7548L25.9677 37.8654H34.3868L39.5943 23.7048H48.0135V24.102H47.61C44.6978 24.102 43.2417 25.5692 43.2417 28.5037V37.8654H51.6179V38.2626H43.2417V48.9018C43.2417 51.8363 44.6978 53.3035 47.61 53.3035H48.0135V53.7061H34.8656V53.3035H35.2637C38.1759 53.3035 39.632 51.8363 39.632 48.9018V38.2626H34.6612L28.7274 54.3019H28.2863L22.3525 38.2626H22.3633ZM17.7906 33.7428C17.952 37.3447 17.9896 37.7848 22.2019 37.8654L17.7529 25.868C17.7529 28.8258 17.7529 32.7068 17.7906 33.7482V33.7428ZM30.1799 49.2615L34.2308 38.2626H26.1344L30.1853 49.2615H30.1799ZM39.6374 37.86V24.7783L34.828 37.86H39.6374Z" fill="#F2F2F2"/>
+</svg></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section id="introDescription">
+            <div>
+                <h2>Quality to your Home</h2>
+                <p>We are a small, family-driven business that started just last year, built from a simple passion for creating and crafting. What began as a love for working with our hands has grown into a dedication to fine craftsmanship and custom woodworking.</p>
+                <p>Every piece we build reflects the beauty of true craftsmanship. We focus on quality materials, thoughtful design, and attention to detail, ensuring that each project is not only functional but meaningful. </p>
+                <p id="p3">At the heart of our work is family. We believe in honest labor, standing by your word, and taking pride in what you create. Hard work, integrity, and respect for the craft guide everything we do, from the first cut of wood to the final finish.</p>
+            </div>
+            <img src="images/cowboy_hand_holding_rope.jpg" alt="Close up image of a cowboy hand in a thick glove, holding a rope" >
+        </section>
+
+        <!-- product display Section -->
+
+        <section id="products">
+            <div class="product-controls" role="tablist" aria-label="Product list">
+        <button class="product-btn" data-product="tables" id="prod-tables" role="tab" aria-selected="true">Tables</button>
+        <button class="product-btn" data-product="chairs" id="prod-chairs" role="tab" aria-selected="false">Chairs</button>
+        <button class="product-btn" data-product="kitchen-wear" id="prod-kitchen-wear" role="tab" aria-selected="false">Kitchen Wear</button>
+        <button class="product-btn" data-product="custom" id="prod-custom" role="tab" aria-selected="false">Custom</button>
+            </div>
+        
+
+        <div class="product-display" id="product-display">
+            
+            <!-- product panels are going to be managed by the JS, only is is visible -->
+
+            <article class="product-display" id="productDisplay">
+                <h2>Luxury Tables</h2>
+                <img src="images/prod_display_epoxy_table.png" alt="Image of a custom made epoxy table with a river design in the middle, made of blue epoxy resin and wood on the sides" >
+                <p>Our custom epoxy tables are where craftsmanship meets creativity. Each piece is thoughtfully designed and handcrafted to highlight the natural beauty of real wood, enhanced with high-quality epoxy resin to create a table that is both functional and truly unique.</p>
+                <a href="#shop">Browse</a>
+            </article>
+
+            <article class="product-panel hidden" data-product="chairs">
+                <h2>Handcrafted Chairs</h2>
+                <img src="images/prod_display_epoxy_chair.png" alt="Image of a custom made wooden chair with tree marks and rings placed randomly throughout the chair with four black peg legs." >
+                <p>Our handcrafted chairs are thoughtfully designed to bring both elegance and strength into your home. Designed with a balance of beauty and durability, each piece reflects our commitment to fine craftsmanship and premium materials.</p>
+                <a href="#shop">Browse</a>
+            </article>
+
+            <article class="product-panel hidden" data-product="kitchen-wear">
+                <h2>Kitchen Wear</h2>
+                <img src="images/prod_display_kitchen_wear.png" alt="Image of custom made kitchen wear with a rustic design, made of wood and metal." >
+                <p>From elegantly finished wood accents to carefully detailed designs, our kitchen supplies are made to elevate everyday cooking into an experience. Blending timeless craftsmanship with a touch of sophistication, our pieces add warmth, style, and lasting quality to any kitchen space — because even the tools you use every day should feel exceptional.</p>
+                <a href="#shop">Browse</a>
+            </article>
+
+            <article class="product-panel hidden" data-product="custom">
+                <h2>Crafted to Your Vision</h2>
+                <img src="images/prod_display_custom.png" alt="Image of a custom made wooden bench with a rustic design, made of wood and metal." >
+                <p>If you can envision it, we can craft it. Whether it's a grand focal point for your home or a thoughtfully designed detail that ties a room together, we specialize in turning bold ideas into beautifully finished realities. Every project is approached with care, precision, and an eye for elegance, ensuring your space feels both elevated and welcoming. Request a quote today and let's create something extraordinary together.</p>
+                <a href="#contact">Request Quote</a>
+            </article>
+
+        </div>
+        </section>
+
+        <!-- Shop Section -->
+
+        <section id="shop">
+            <h2>Featured Items</h2>
+            <p>Our shop is currently under construction, but we are taking custom orders! Contact us directly for a custom quote.</p>
+            <a href="#contact">Contact Us</a>
+        </section>
+
+        <!-- contact us section -->
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact us to get a custom quote or for any questions you may have about our products and services. We look forward to hearing from you!</p>
+            <form id="contact-us-form" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="GET">
+                    <label for="fullName">Full Name<span class="required">*</span></label>
+                    <input type="text" name="fullName" id="fullName">
+                    
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" name="email" id="email">
+                    <p class="hidden">Please enter a valid email address</p>
+
+                    <label for="phone">Phone Number<span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone"   >                  
+                    <p class="hidden">Please enter a valid phone number</p>
+
+                    <fieldset>
+                        <legend>Contact Preference<span class="required">*</span></legend>
+                        <label for="textOpt" class="radio">
+                            <span class="radio_input">
+                            <input type="radio" name="contactPref" id="textOpt" value="textMsg" required checked>
+                            <span class="radio_control"></span>
+                            </span>
+                            <span class="radio_label">Text Me</span>
+                        </label>
+                        <label for="emailOpt" class="radio">
+                            <span class="radio_input">
+                            <input type="radio" name="contactPref" id="emailOpt" value="email">
+                            <span class="radio_control"></span>
+                            </span>
+                            <span class="radio_label">Email Me</span>
+                        </label>
+                    </fieldset>
+                    <label for="msg">What can we help you with?<span class="required">*</span></label>
+                    <textarea id="msg" name="message"></textarea>
+                    
+                    <p id="msgError" class="hidden">Please let us know what you need.</p>
     
+                    <button type="submit" id="submitBtn">Send</button>
+
+            </form>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+
+        </section>
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2026 Miskin Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
