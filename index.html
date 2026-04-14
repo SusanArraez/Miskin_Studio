@@ -7,6 +7,13 @@
     <meta name="description" content="Get custom made woodworking furniture for your house for a lavish and luxurious look. Contact us directly for a custom quote.">
     <link rel="shortcut icon" type="image/x-icon" href="images/MLogo_favicon_io/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- loading jQuery files and Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-ui-1.14.2.custom/jquery-ui-1.14.2.custom/jquery-ui.min.js"></script>
+
+    <script src="scripts.js" defer></script>
+    
     <title>Miskin Studio</title>
 </head>
 <body>
@@ -52,42 +59,46 @@
 				<li><a href="#prod3">Kitchen Wear</a></li>
                 <li><a href="#prod4">Custom</a></li>
             </ul>
-            </ul>
-        
-
-        <div class="product-display" id="product-display">
             
             <!-- product panels are going to be managed by the JS, only is is visible -->
 
-            <article class="product-display" id="productDisplay">
-                <h2>Luxury Tables</h2>
+            <section class="product-display" id="prod1">
                 <img src="images/prod_display_epoxy_table.png" alt="Image of a custom made epoxy table with a river design in the middle, made of blue epoxy resin and wood on the sides" >
-                <p>Our custom epoxy tables are where craftsmanship meets creativity. Each piece is thoughtfully designed and handcrafted to highlight the natural beauty of real wood, enhanced with high-quality epoxy resin to create a table that is both functional and truly unique.</p>
-                <a id="btn" href="#shop">Browse</a>
-            <!-- </article>
+                <div class="product-display-info">
+                    <h2>Luxury Tables</h2>
+                    <p>Our custom epoxy tables are where craftsmanship meets creativity. Each piece is thoughtfully designed and handcrafted to highlight the natural beauty of real wood, enhanced with high-quality epoxy resin to create a table that is both functional and truly unique.</p>
+                    <a class="btn" href="#shop">Browse</a>
+                </div>
+                
+            </section>
 
-            <article class="product-panel hidden" data-product="chairs">
-                <h2>Handcrafted Chairs</h2>
+            <section class="product-display hidden" id="prod2">
                 <img src="images/prod_display_epoxy_chair.png" alt="Image of a custom made wooden chair with tree marks and rings placed randomly throughout the chair with four black peg legs." >
-                <p>Our handcrafted chairs are thoughtfully designed to bring both elegance and strength into your home. Designed with a balance of beauty and durability, each piece reflects our commitment to fine craftsmanship and premium materials.</p>
-                <a href="#shop">Browse</a>
-            </article>
+                <div class="product-display-info">
+                    <h2>Handcrafted Chairs</h2>
+                    <p>Our handcrafted chairs are thoughtfully designed to bring both elegance and strength into your home. Designed with a balance of beauty and durability, each piece reflects our commitment to fine craftsmanship and premium materials.</p>
+                    <a class="btn" href="#shop">Browse</a>
+                </div>
+            </section>
 
-            <article class="product-panel hidden" data-product="kitchen-wear">
-                <h2>Kitchen Wear</h2>
+            <section class="product-display hidden" id="prod3">
                 <img src="images/prod_display_kitchen_wear.png" alt="Image of custom made kitchen wear with a rustic design, made of wood and metal." >
-                <p>From elegantly finished wood accents to carefully detailed designs, our kitchen supplies are made to elevate everyday cooking into an experience. Blending timeless craftsmanship with a touch of sophistication, our pieces add warmth, style, and lasting quality to any kitchen space — because even the tools you use every day should feel exceptional.</p>
-                <a href="#shop">Browse</a>
-            </article>
+                <div class="product-display-info">
+                    <h2>Kitchen Wear</h2>
+                    <p>From elegantly finished wood accents to carefully detailed designs, our kitchen supplies are made to elevate everyday cooking into an experience. Blending timeless craftsmanship with a touch of sophistication, our pieces add warmth, style, and lasting quality to any kitchen space — because even the tools you use every day should feel exceptional.</p>
+                    <a class="btn" href="#shop">Browse</a>
+                </div>
+            </section>
 
-            <article class="product-panel hidden" data-product="custom">
-                <h2>Crafted to Your Vision</h2>
+            <section class="product-display hidden" id="prod4">
                 <img src="images/prod_display_custom.png" alt="Image of a custom made wooden bench with a rustic design, made of wood and metal." >
-                <p>If you can envision it, we can craft it. Whether it's a grand focal point for your home or a thoughtfully designed detail that ties a room together, we specialize in turning bold ideas into beautifully finished realities. Every project is approached with care, precision, and an eye for elegance, ensuring your space feels both elevated and welcoming. Request a quote today and let's create something extraordinary together.</p>
-                <a href="#contact">Request Quote</a>
-            </article> -->
+                <div class="product-display-info">
+                    <h2>Crafted to Your Vision</h2>
+                    <p>If you can envision it, we can craft it. Whether it's a grand focal point for your home or a thoughtfully designed detail that ties a room together, we specialize in turning bold ideas into beautifully finished realities. Every project is approached with care, precision, and an eye for elegance, ensuring your space feels both elevated and welcoming. Request a quote today and let's create something extraordinary together.</p>
+                    <a class="btn" href="#contact">Request Quote</a>
+                </div>
+            </section>
 
-        </div>
         </section>
 
         <!-- Shop Section -->
