@@ -283,6 +283,11 @@ padding-right: 25px;
     justify-items: center;
     gap: 2rem;
 }
+#contact p{
+    max-width: 600px;
+    padding: 0 20rem;
+    text-align: center;
+}
 form{
     max-width: 600px;
     margin: 0 auto;
