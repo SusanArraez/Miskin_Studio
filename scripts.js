@@ -61,6 +61,41 @@ function loadFromLocalStorage(){
 // Load saved data when page loads
 document.addEventListener("DOMContentLoaded", loadFromLocalStorage);
 
+/* ---------------- Load Reviews ---------------- */
+function loadReviews(){
+    const reviewsList = document.getElementById("reviews-list");
+    if(!reviewsList) return;
+    
+    fetch("reviews.json")
+        .then(response => {
+            if(!response.ok) throw new Error("Failed to load reviews");
+            return response.json();
+        })
+        .then(reviews => {
+            // Clear any existing content
+            reviewsList.innerHTML = "";
+            
+            // Create each review
+            reviews.forEach((review, index) => {
+                const reviewCard = document.createElement("article");
+                reviewCard.className = "review-card";
+                reviewCard.innerHTML = `
+                    <p class="review-text">"${review.text}"</p>
+                    <p class="review-author">— ${review.name}</p>
+                `;
+                reviewsList.appendChild(reviewCard);
+            });
+            
+            console.info(`Loaded ${reviews.length} reviews`);
+        })
+        .catch(error => {
+            console.error("Error loading reviews:", error);
+        });
+}
+
+// Load reviews when page loads
+document.addEventListener("DOMContentLoaded", loadReviews);
+
 // Form validation
 
 /* ---------------- Validation messages ---------------- */
@@ -93,6 +128,8 @@ let newUser = {
 };
 
 /* ---------------- validate form ---------------- */
+
+
 function validateForm(event){
   event.preventDefault(); // always prevent until validation finishes
     console.clear();

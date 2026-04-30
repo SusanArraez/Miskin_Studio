@@ -389,7 +389,43 @@ span.radio_label{
 /* -----------Reviews Section----------------- */
 #reviews{
     background-color: var(--dark-brown);
-    
+}
+#reviews h2{
+    padding: 4rem 3rem 0;
+    text-align: center;
+}
+#reviews-p{
+    max-width: 600px;
+    padding: 2rem 20rem;
+    text-align: center;
+    margin: 0 auto;
+}
+#reviews-list{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+}
+.review-card{
+    flex: 1;
+    background-color: transparent;
+    padding: 1.5rem;
+    border: 3px solid var(--Pearly-white);
+}
+
+.review-text{
+    font-style: italic;
+    color: var(--Pearly-white);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.review-author{
+    color: var(--Pearly-white);
+    font-weight: 600;
+    text-align: right;
 }
 /* --------------------Footer----------------- */
 footer{
