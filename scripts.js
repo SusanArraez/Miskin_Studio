@@ -317,3 +317,4 @@ const form = document.getElementById("contact-us-form");
 if(form){
     form.addEventListener("submit", validateForm);
 }
+
